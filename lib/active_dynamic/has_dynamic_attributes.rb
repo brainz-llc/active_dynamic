@@ -14,14 +14,14 @@ module ActiveDynamic
     class_methods do
       def where_dynamic(options)
         query = joins(:active_dynamic_attributes)
-        
+
         options.each do |prop, value|
           query = query.where(active_dynamic_attributes: {
             name: prop,
             value: value
           })
         end
-        
+
         query
       end
     end

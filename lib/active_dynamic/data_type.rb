@@ -6,5 +6,7 @@ module ActiveDynamic
     Decimal = 3
     Date = 4
     DateTime = 5
+    Single = 10
+    Radio = 11
   end
 end
